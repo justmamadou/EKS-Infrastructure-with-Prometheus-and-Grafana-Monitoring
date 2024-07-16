@@ -4,7 +4,7 @@ This repository contains Terraform code to create an Amazon EKS cluster with int
 
 ## Architecture Diagram
 
-(![image](https://github.com/user-attachments/assets/8b4bbe81-662a-4eef-9e86-dabfe88a0433))
+![image](https://github.com/user-attachments/assets/8b4bbe81-662a-4eef-9e86-dabfe88a0433)
 
 ## Overview
 
