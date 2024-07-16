@@ -14,15 +14,15 @@ module "vpc" {
 
   public_subnet_tags_per_az = {
     us-east-1a = {
-      Name                     = "${local.name}-public-1",
+      Name                     = "${local.name}-public-us-east-1a",
       "kubernetes.io/role/elb" = "1"
     },
     us-east-1b = {
-      Name                     = "${local.name}-public-2",
+      Name                     = "${local.name}-public-us-east-1b",
       "kubernetes.io/role/elb" = "1"
     },
     us-east-1c = {
-      Name                     = "${local.name}-public-3",
+      Name                     = "${local.name}-public-us-east-1c",
       "kubernetes.io/role/elb" = "1"
     }
   }
@@ -35,15 +35,15 @@ module "vpc" {
 
   private_subnet_tags_per_az = {
     us-east-1a = {
-      Name                              = "${local.name}-private-1",
+      Name                              = "${local.name}-private-us-east-1a",
       "kubernetes.io/role/internal-elb" = "1",
     },
     us-east-1b = {
-      Name                              = "${local.name}-private-2",
+      Name                              = "${local.name}-private-us-east-1b",
       "kubernetes.io/role/internal-elb" = "1",
     },
     us-east-1c = {
-      Name                              = "${local.name}-private-3",
+      Name                              = "${local.name}-private-us-east-1c",
       "kubernetes.io/role/internal-elb" = "1"
     }
   }

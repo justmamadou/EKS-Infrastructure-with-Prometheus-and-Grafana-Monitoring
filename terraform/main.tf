@@ -84,18 +84,18 @@ module "eks" {
   }
 }
 
-data "aws_eks_cluster" "log-metric" {
+data "aws_eks_cluster" "supracell" {
   depends_on = [module.eks.cluster_name]
   name       = module.eks.cluster_name
 }
 
-data "aws_eks_cluster_auth" "log-metric" {
+data "aws_eks_cluster_auth" "supracell" {
   depends_on = [module.eks.cluster_name]
   name       = module.eks.cluster_name
 }
 
 data "tls_certificate" "eks" {
-  url = data.aws_eks_cluster.log-metric.identity[0].oidc[0].issuer
+  url = data.aws_eks_cluster.supracell.identity[0].oidc[0].issuer
 }
 
 data "aws_iam_policy_document" "csi" {
