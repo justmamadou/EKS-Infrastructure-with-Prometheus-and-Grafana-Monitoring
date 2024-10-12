@@ -1,0 +1,7 @@
+---
+image:
+  repository: "docker.io/opensearchproject/opensearch-dashboards"
+  tag: ""
+  pullPolicy: "IfNotPresent"
+
+opensearchHosts: "https://opensearch-cluster-master.opensearch:9200"
